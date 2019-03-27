@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "uikit": "3.0.3",
-    "@fortawesome/fontawesome-free": "*"
+    "@fortawesome/fontawesome-free": "*",
+    "phantomas": "*"
   }
 }

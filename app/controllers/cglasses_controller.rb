@@ -2,8 +2,7 @@
 # Copyright (c) 2019 Gauthier FRANCOIS
 
 class CglassesController < ApplicationController
-
   def home
-    @run = params[:run]
+    @run = %x(ls #{params[:run]})
   end
 end
