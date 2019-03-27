@@ -1,10 +1,9 @@
 // MIT License
 // Copyright (c) 2019 Gauthier FRANCOIS
 
-p
-  =@run || ''
 form action="" method="GET"
-    input type="text" name="run" value="#{params[:run]}"
+    input type="text" name="url" value="#{params[:url]}"
     input type="submit" value="Save"
-
+p
+  =@phantomas_data || ''
 
