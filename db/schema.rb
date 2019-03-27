@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_27_122729) do
+ActiveRecord::Schema.define(version: 2019_03_27_123822) do
+
+  create_table "phantomas_runs", force: :cascade do |t|
+    t.text "data"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "website_id"
+    t.index ["website_id"], name: "index_phantomas_runs_on_website_id"
+  end
 
   create_table "websites", force: :cascade do |t|
     t.string "url"
